@@ -1,0 +1,787 @@
+/* Library Guides CSS -- ND STYLES -- contact rharriso@nd.edu */
+/* Colors ------------------------------------------------------------------- */
+/* Link brown = #93601D */
+/*  Button bronw = #5d422c */
+/* Library footer ----------------------------------------------------------- */
+/* remove 'powered by Springshare', and 'All rights reserved',
+and Hide the report a problem link. This is replaced with our own link
+in our own custom footer */
+#s-lib-footer-brand,
+#s-lib-footer-rights,
+#s-lib-footer-support-link a {
+   display: none;
+}
+
+/* Sets the background of the public footer to transparent */
+#s-lib-footer-public {
+   background: transparent;
+   padding: 0px !important;
+}
+
+/* Add a lock icon to the login button in the footer */
+#s-lib-footer-login-link a:before {
+   font-family: "FontAwesome";
+   content: "\f023";
+   padding-right: 6px;
+}
+
+/* Style the login button in the footer */
+#s-lib-footer-login-link a {
+   color: #FFFFFF;
+   border-color: #00527f;
+   text-shadow: none;
+   box-shadow: none;
+   background-image: none;
+   float: right;
+   margin: 10px;
+}
+
+/* Text -------------------------------------------------------------------- */
+div, span, mark, p, li, th, tr, td, dd, dl, dt, a, ul, ol, dl, label, input, textarea, button, select, option {
+   font-size: 16px !important;
+}
+
+body, p {
+   line-height: 1.5;
+}
+
+th {
+   font-weight: bold !important;
+}
+
+/* definition lists */
+dt {
+   font-weight: bold !important;
+}
+
+dl {
+   margin-left: 1em;
+}
+
+dd {
+   margin-bottom: 1em;
+}
+
+/* Sets the font-size and padding of the box titles */
+.s-lib-box-title {
+   padding: 1.3rem 0 1.3rem 1.7rem !important;
+   font-size: 16px !important;
+}
+
+/* Style the guide name  */
+#s-lg-guide-name {
+   border-bottom: 4px double #072242;
+   padding-bottom: 1rem;
+}
+
+/* Style the example panel box */
+.example {
+   position: relative;
+   margin: 15px 0 -2px 0;
+   padding: 50px 20px 12px 20px;
+   background-color: #fff;
+   border-radius: 4px;
+   border: 1px solid #ddd;
+   z-index: 10;
+}
+
+.example:after {
+   content: "Example";
+   position: absolute;
+   top: 0;
+   left: 0;
+   padding: 2px 8px;
+   font-size: 1rem;
+   font-weight: bold;
+   background-color: #ececec;
+   color: #000000 !important;
+   padding: 6px;
+   border-radius: 4px 0 4px 0;
+   font-weight: 400;
+}
+
+/* Force prettyprint to wrap */
+pre.prettyprint {
+   border: none !important;
+   padding: 10px !important;
+   font-size: 14px;
+   white-space: pre-wrap;
+   /* css-3 */
+   white-space: -moz-pre-wrap;
+   /* Mozilla, since 1999 */
+   white-space: -pre-wrap;
+   /* Opera 4-6 */
+   white-space: -o-pre-wrap;
+   /* Opera 7 */
+   word-wrap: break-word;
+   /* Internet Explorer 5.5+ */
+}
+
+/* Links -------------------------------------------------------------------- */
+/* Style the color of all links */
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+   color: #93601D;
+   font-weight: bold;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+.s-lg-link-list,
+.s-lg-system-list {
+   margin-left: 2rem;
+}
+
+/* Sets a bottom margin on list items */
+.s-lg-link-list li,
+.s-lg-system-list li {
+   margin-bottom: .75rem;
+}
+
+/* Turn off the box around the focus */
+a:focus {
+   outline: none !important;
+}
+
+.pagination a {
+   color: #93601D;
+}
+
+/* Set the background to the page nav links to brown */
+.pagination>.active>a,
+.pagination>.active>a:link,
+.pagination>.active>a:visited,
+.pagination>.active>a:hover,
+.pagination>.active>a:active {
+   background: silver;
+   border: 1px solid silver;
+}
+
+input[type="checkbox"] {
+   margin-right: 1rem !important;
+}
+
+/* Buttons ------------------------------------------------------------------ */
+/* Remove focus from button */
+.btn:focus {
+   outline: none !important;
+}
+
+/* button {
+   background: #93601D;
+   color: white;
+   box-shadow: none !important;
+} */
+/* Accordions --------------------------------------------------------------- */
+/* Adds 'plus' glyph for enabling collapsible panels */
+.panel-heading .accordion-toggle:before {
+   font-family: "FontAwesome";
+   content: "\f068";
+   float: right;
+   color: silver;
+}
+
+.panel-heading .accordion-toggle.collapsed:before {
+   content: "\f067";
+   color: silver;
+}
+
+/* sets the link inside the accordion header to
+the length of the entire panel */
+.panel-title>a {
+   display: block;
+}
+
+/* FontAwesome Icons -------------------------------------------------------- */
+/* Removes the margings on simple fa class */
+.fa-fw {
+   padding: .25rem !important;
+   margin-right: .3rem;
+}
+
+/* Set the color of the popover icons to brown like their link containers */
+.btn-help-popover,
+.s-lib-popover {
+   color: #93601D !important;
+   padding: 3px;
+}
+
+.popover-content button.btn-primary {
+   background: #93601D !important;
+   text-shadow: none !important;
+   box-shadow: none !important;
+   color: white !important;
+   border: 1px solid #93601D !important;
+}
+
+/* Set the color of the nav pills buttons on the homepage to brown */
+.s-lg-index-nav-btn button.btn {
+   background: #93601D;
+   color: white !important;
+   border: 1px solid #93601D !important;
+}
+
+/* Set the color of the nav pills buttons on the homepage to brown */
+.s-lg-index-nav-btn.active button.btn {
+   background: transparent !important;
+   cursor: default;
+   color: #93601D !important;
+   font-weight: bold !important;
+}
+
+/* Set homepage nav bar area, top and bottom, to transparent */
+#s-lg-hp-nav-bottom,
+#s-lg-hp-nav {
+   background: transparent;
+}
+
+#s-lg-hp-nav ul li ul.nav.nav-pills {
+   border-bottom: 2px solid silver;
+   padding-bottom: 1rem;
+}
+
+/* Hide the Subject homepage since we hope they'll visit the pathfinder pages */
+.s-lg-guide-list+.alert {
+   display: none !important;
+}
+
+/* Remove the box shadow on the search input on the home page */
+#s-lg-guide-search,
+.input-group-btn,
+.input-group-btn button {
+   box-shadow: none !important;
+   margin-left: 2px;
+   border-radius: 4px;
+}
+
+.input-group-btn button[type="submit"] {
+   margin-left: 2px !important;
+   border-radius: 4px !important;
+   padding-top: 7px;
+   padding-bottom: 7px;
+   background-color: #93601D;
+   color: white !important;
+   text-shadow: none !important;
+}
+
+/* Format the badges */
+.panel-default>.panel-heading .badge {
+   background-color: #93601D;
+   color: white;
+}
+
+/* Hide the "search:" text next to the search input on home page */
+form[role="search"]>span {
+   display: none !important;
+}
+
+/* Increase padding below breadcrumbs */
+#s-lg-guide-header-info {
+   margin-top: 30px;
+}
+
+/* Remove the skip to main content link */
+#s-lg-public-skiplink {
+   display: none;
+}
+
+/* Boxes --------------------------------------------------------------------------------- */
+/* square the boxes in the left nav */
+.list-group.s-lg-boxnav li {
+   border-radius: 0px !important;
+}
+
+.s-lib-box-content {
+   padding: 1rem 1.5rem;
+}
+
+/* Buttons ----------------------------------------------------------------------------- */
+/* Turn off the shading on Bootstrap buttons */
+.btn-primary, .btn-info, .btn-danger, .btn-warning, .btn-success {
+   background-image: none !important;
+}
+
+/* ------  Fix the email me button */
+.s-lib-profile-div.s-lib-profile-center.s-lib-profile-email,
+.s-lib-profile-div.s-lib-profile-center.s-lib-profile-email a {
+   font-weight: 500 !important;
+   padding: 8px !important;
+}
+
+/* Style the email button */
+.s-lib-profile-div.s-lib-profile-center.s-lib-profile-email a {
+   background-color: #93601D;
+   color: white !important;
+}
+
+.s-lib-profile-div.s-lib-profile-center.s-lib-profile-email a:hover {
+   background-color: #d2b48c;
+}
+
+.s-lib-profile-email a:before {
+   content: "\f1d9 " !important;
+   font-family: FontAwesome;
+   margin-right: .5em;
+}
+
+/* Set margin-right on the nav buttons, homepage */
+.nav .s-lg-index-nav-btn > button {
+   margin:10px 2px;
+}
+
+/* Andy's Style Additions------------------------------------------------------ */
+#s-lib-public-header-title {
+   color: #434c57;
+}
+
+.s-lg-book-by,
+.s-lg-book-author {
+   color: #646464;
+}
+
+/* .label-info {
+   background-color: #5d422c;
+} */
+/* .alert-info {
+   background-color: #E5F1F7;
+} */
+#f .b a {
+   font-family: GPCMed, sans-serif !important;
+   font-weight: normal;
+}
+
+.fp nav a {
+   font-family: GPHeavy, sans-serif !important;
+   font-weight: normal;
+}
+
+.cr.dp {
+   margin-left: 0;
+}
+
+.hw {
+   image-rendering: -webkit-optimize-contrast;
+}
+
+.ui-widget-content a {
+   color: #93601d;
+}
+
+@media screen and (max-width: 620px) {
+   .fx li {
+      display: block !important;
+   }
+}
+
+/* Blockquote -------------------------------------------------------------- */
+cite a {
+   font-size: inherit;
+}
+
+/* De-italicize the cite element */
+.no-italics {
+   font-style: normal;
+}
+
+/* Jumbotrons --------------------------------------------------------------- */
+/* Adds text shadow to make the text inside the jumbotron pop */
+.jumbotron p,
+.jumbotron h1 {
+   text-shadow: 2px 2px 1px black;
+}
+
+/* Adds a top margin to the jumbotron button for better readability */
+.jumbotron .btn {
+   margin-top: 1.5rem;
+}
+
+/* Transparent buttons */
+.btn-secondary-dark {
+   color: #000000;
+   background-color: transparent;
+   border-color: #000000;
+}
+
+.btn-secondary-light {
+   color: #FFFFFF;
+   background-color: transparent;
+   border-color: #FFFFFF;
+}
+
+/* Labels -------------------------------------------------------------------- */
+.label-large {
+   font-size: large;
+}
+
+.label-small {
+   font-size: xx-small;
+}
+
+/* Lists -------------------------------------------------------------------- */
+/* Add bottom margin to the description lists */
+dd {
+   margin-bottom: 1rem;
+}
+
+/* Set the anchor element to display block */
+.list-group li a {
+   display: block;
+}
+
+/* Panels ------------------------------------------------------------------ */
+/* Adds 'plus' glyph for enabling collapsible panels */
+.panel-heading .accordion-toggle:before {
+   font-family: FontAwesome;
+   content: "\f068";
+   float: right;
+   color: silver;
+}
+
+.panel-heading .accordion-toggle.collapsed:before {
+   content: "\f067";
+   color: silver;
+}
+
+/* sets the link to the size of the entire panel title */
+.panel-title>a {
+   display: block;
+}
+
+/* Carousels --------------------------------------------------------------- */
+/* Set the color of the captions explicitly */
+.carousel p,
+.carousel h3 {
+   color: white !important;
+}
+
+/* Space the circular slide indicators out a wee bit */
+.carousel-indicators li,
+carousel-indicators li.active {
+   margin-left: 5px;
+}
+
+/* Tables ------------------------------------------------------------------ */
+/* Set styles for the Steps column */
+.numbered-steps tr td:first-of-type {
+   padding: 3px;
+   text-align: center;
+   vertical-align: middle;
+   font-weight: 600;
+   background: aliceblue;
+   width: 1.5rem;
+   color: #666666;
+   font-size: 1.2rem;
+}
+
+/* Set the font color to gray */
+.gray {
+   color: gray;
+}
+
+/* Remove all borders from table */
+table.table-borderless tr,
+table.table-borderless th,
+table.table-borderless td {
+   border: none !important;
+}
+
+/* Arbitrary styling for the caption and summary */
+caption {
+   font-size: larger;
+   text-align: center;
+   color: inherit;
+}
+
+caption .summary {
+   font-size: smaller;
+   text-align: center;
+   color: gray;
+}
+
+/* Miscellaneous ----------------------------------------------------------- */
+/* Set the FontAwesome icons to middle vertical */
+
+/* Pads the tabs panels */
+.s-lib-box-content .ui-tabs .ui-tabs-panel {
+   padding: 25px;
+}
+
+/* Sets the active tab to white */
+.ui-widget-header .ui-state-active {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+}
+
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+     background-color: #ffffff;
+     border-radius: 4px 4px 0px 0px;
+     outline:none;
+}
+
+.s-lib-jqtabs .ui-tabs-nav {
+   background: transparent !Important;
+}
+
+
+/* Aligns fontawesome icons to middle in buttons */
+button .fa {
+   vertical-align: middle;
+}
+
+button {
+   box-shadow: none !important;
+}
+
+.s-lg-edit-link {
+   color: white !important;
+}
+
+/* style the handbook link */
+#open-handbook i {
+   color: #8a8a8a !important;
+}
+
+/* Class for icons */
+.short-round {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #FFFFFF;
+}
+
+/* Prettyprint -- Disables the background for alternating line numbers */
+ol.linenums li {
+   background: transparent !important;
+}
+
+/* Adds individual lines to prettyprint */
+/* ol.linenums{
+    counter-reset:linenumber;
+}
+ol.linenums li{
+    list-style-type:none;
+    counter-increment:linenumber;
+}
+ol.linenums li:before{
+    content: counter(linenumber);
+    float:left;
+    margin-left:-4em;
+    text-align:right;
+    width:3em;
+} */
+/* Adds padding around the content inside each tab panel */
+.tab-pane {
+   padding: 1rem;
+}
+
+/* Adds margin bottom to the images NOT IN panels */
+.image-grid img {
+   margin-bottom: 1rem;
+}
+
+/* Round the corners of the search box at top of guide */
+#s-lg-guide-search-terms {
+   border-radius: 4px;
+}
+
+/* Set the main content column top padding to 0 */
+#s-lg-guide-main {
+   padding-top: 0px !important;
+}
+
+/* Hide the guide description */
+#s-lg-guide-description {
+   display: none;
+}
+
+button.close {
+   padding: .5rem 1rem !important;
+   color: white !important;
+   font-size: 18px !important;
+   opacity: 1 !important;
+   border: 0px !important;
+   box-shadow: none !important;
+   background: transparent;
+}
+
+code, kbd, pre, samp {
+   font-family: Menlo, Monaco, Consolas, "Courier New", monospace !important;
+   font-size: 15px;
+}
+
+/* Give spacing inside the source editor */
+textarea.cke_source {
+   white-space: pre-wrap;
+   /* css-3 */
+   white-space: -moz-pre-wrap;
+   /* Mozilla, since 1999 */
+   white-space: -pre-wrap;
+   /* Opera 4-6 */
+   white-space: -o-pre-wrap;
+   /* Opera 7 */
+   word-wrap: break-word;
+   /* Internet Explorer 5.5+ */
+}
+
+/* Hide the metadata for guides in a guide list */
+.s-lg-guide-list-info {
+   display: none;
+}
+
+/* Set the icons in the contact table to gray */
+.s-lib-profile-contact table i {
+   color: #8a8a8a !important;
+}
+
+/* Hide the pdf icon for documents */
+.s-lg-file-icon.fa-file-pdf-o {
+   display:none;
+}
+
+hr {
+   border-bottom: 1px solid gray;
+}
+
+/* ---- placeholder text --------------------------- */
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #ccc !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #ccc !important;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #ccc !important;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #ccc !important;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #ccc !important;
+}
+
+::placeholder {
+  color: #ccc !important;
+}
+
+/* Alerts and buttons -------------------------------------------------- */
+.alert-default {
+   color: #383d41 !important;
+   background: #e2e3e5 !important;
+   border-color: #d6d8db !important;
+}
+
+.alert-info {
+   color: #31708f !important;
+   background: #d9edf7 !important;
+   border-color: #bce8f1 !important;
+}
+
+.alert-warning {
+   color: #8a6d3b !important;
+   background: #fcf8e3 !important;
+   border-color: #faebcc !important;
+}
+
+.alert-danger {
+   color: #a94442 !important;
+   background: #f2dede !important;
+   border-color: #ebccd1 !important;
+}
+
+.alert-success {
+   color: #3c763d;
+   background-color: #dff0d8;
+   border-color: #d6e9c6;
+}
+
+.btn-primary {
+   color: #fff !important;
+   background-color: #337ab7 !important;
+   border-color: #2e6da4 !important;
+   text-shadow: none !important;
+   background-image: none !important;
+   box-shadow: none !important;
+}
+
+.btn-success {
+   color: #fff !important;
+   background-color: #5cb85c !important;
+   border-color: #4cae4c !important;
+   text-shadow: none !important;
+   background-image: none !important;
+   box-shadow: none !important;
+}
+
+.btn-info {
+   color: #fff !important;
+   background-color: #5bc0de !important;
+   border-color: #46b8da !important;
+   text-shadow: none !important;
+   background-image: none !important;
+   box-shadow: none !important;
+}
+
+.btn-warning {
+   color: #fff !important;
+   background-color: #f0ad4e !important;
+   border-color: #eea236 !important;
+   text-shadow: none !important;
+   background-image: none !important;
+   box-shadow: none !important;
+}
+
+.btn-danger {
+   color: #fff !important;
+   background-color: #d9534f !important;
+   border-color: #d43f3a !important;
+   text-shadow: none !important;
+   background-image: none !important;
+   box-shadow: none !important;
+}
+
+.s-lib-cmd-bar .navbar-collapse .navbar-nav ul li {
+   padding: 1px;
+   font-size: 14px;
+}
+
+/* Accordion panel styles */
+/* plus glyph for showing collapsible panels */
+.panel-heading .accordion-plus-toggle:before {
+   font-family: FontAwesome;
+   content: "\f068";
+   float: right;
+   color: silver;
+}
+
+.panel-heading .accordion-plus-toggle.collapsed:before {
+   content: "\f067";
+   color: silver;
+}
+
+/* arrow glyph for showing collapsible panels */
+.panel-heading .accordion-arrow-toggle:before {
+   font-family: FontAwesome;
+   content: "\f078";
+   float: right;
+   color: silver;
+}
+
+.panel-heading .accordion-arrow-toggle.collapsed:before {
+   content: "\f054";
+   color: silver;
+}
+
+/* sets the link to the width of the entire panel title */
+.panel-title > a {
+   display: block  !important;
+}
