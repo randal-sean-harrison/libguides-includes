@@ -561,6 +561,10 @@ ol.linenums li {
    background: transparent !important;
 }
 
+.linenums li {
+    list-style-type: decimal;
+}
+
 /* Adds individual lines to prettyprint */
 /* ol.linenums{
     counter-reset:linenumber;
